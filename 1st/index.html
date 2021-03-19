@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>select your clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="currentTime">현재 시간 나오는 곳</div>
+        <ul>
+            <li>
+                <p>eat meals time</p>
+                <select name="select1" id="select1">
+                    <option value="select1_1">0-6</option>
+                    <option value="select1_2">6-12</option>
+                    <option value="select1_3">12-18</option>
+                    <option value="select1_4">18-24</option>
+                </select>
+            </li>
+            <li>
+                <p>study time</p>
+                <select name="select2" id="select2">
+                    <option value="select2_1">0-6</option>
+                    <option value="select2_2">6-12</option>
+                    <option value="select2_3">12-18</option>
+                    <option value="select2_4">18-24</option>
+                </select>
+            </li>
+            <li>
+                <p>tennis time</p>
+                <select name="select3" id="select3">
+                    <option value="select3_1">0-6</option>
+                    <option value="select3_2">6-12</option>
+                    <option value="select3_3">12-18</option>
+                    <option value="select3_4">18-24</option>
+                </select>
+            </li>
+        </ul>
+        <button type="button" id="innerButton">지정 텍스트 출력</button>
+        <p id="selectText1">select1 한 것과 비교해서 출력</p>
+        <p id="selectText2">select2 한 것과 비교해서 출력</p>
+        <p id="selectText3">select3 한 것과 비교해서 출력</p>
+        <p id="btnClickText">버튼 클릭 시 지정 텍스트 출력</p>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
