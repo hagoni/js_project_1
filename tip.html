@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <title>tip</title>
+</head>
+<body>
+     <form action="">
+         <label for="total">How much was your bill?</label>
+         <input type="text" id="total" placeholder="Bill Amount">
+         <label for="percent">How was your service?</label>
+         <select name="" id="percent">
+             <option value="30">30% - Outstanding</option>
+             <option value="20">20% - Good</option>
+             <option value="15">15% - It was OK</option>
+             <option value="10">10% - Bad</option>
+             <option value="5">5% - Terrible</option>
+         </select>
+         <label for="people">How many people are sharing the bill?</label>
+         <input type="text" id="people" placeholder="Number of People">
+         <button type="button" onclick="tipCalculate()">CALCULATE!</button>
+    </form> 
+    <div id="result"></div>
+    <script>
+        function tipCalculate(){
+            totalValue = document.getElementById("total").value;
+            percentValue = document.getElementById("percent").value;
+            peopleValue = document.getElementById("people").value;
+            function peopleValueCheck(){
+                if(peopleValue >= 2){
+                    return "each"
+                }else{
+                    return ""
+                }
+            }
+            if(peopleValue == ""){ 
+                peopleValue = 1;
+            }else if(peopleValue == "0"){
+                peopleValue = 1;
+            }
+            document.getElementById("result").innerText = "TIP AMOUNT $" + totalValue * (percentValue / 100) / peopleValue + peopleValueCheck();
+            
+        }
+    </script>
+</body>
+</html>
