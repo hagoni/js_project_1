@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>select your clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="currentTime">현재 시간 나오는 곳</div>
+        <ul>
+            <li>
+                <p>eat meals time</p>
+                <select name="select1" id="select1">
+                    <option value="0">0AM-3AM</option>
+                    <option value="1">3AM-6AM</option>
+                    <option value="2">6AM-9AM</option>
+                    <option value="3">9AM-12AM</option>
+                    <option value="4">0PM-3PM</option>
+                    <option value="5">3PM-6PM</option>
+                    <option value="6">6PM-9PM</option>
+                    <option value="7">9PM-12PM</option>
+                </select>
+            </li>
+            <li>
+                <p>study time</p>
+                <select name="select2" id="select2">
+                    <option value="0">0AM-3AM</option>
+                    <option value="1">3AM-6AM</option>
+                    <option value="2">6AM-9AM</option>
+                    <option value="3">9AM-12AM</option>
+                    <option value="4">0PM-3PM</option>
+                    <option value="5">3PM-6PM</option>
+                    <option value="6">6PM-9PM</option>
+                    <option value="7">9PM-12PM</option>
+                </select>
+            </li>
+            <li>
+                <p>tennis time</p>
+                <select name="select3" id="select3">
+                    <option value="0">0AM-3AM</option>
+                    <option value="1">3AM-6AM</option>
+                    <option value="2">6AM-9AM</option>
+                    <option value="3">9AM-12AM</option>
+                    <option value="4">0PM-3PM</option>
+                    <option value="5">3PM-6PM</option>
+                    <option value="6">6PM-9PM</option>
+                    <option value="7">9PM-12PM</option>
+                </select>
+            </li>
+        </ul>
+        <button type="button" id="innerButton">지정 텍스트 출력</button>
+        <div id="selectTextWrap">
+            <p id="selectText1">select1 한 것과 비교해서 출력</p>
+            <p id="selectText2">select2 한 것과 비교해서 출력</p>
+            <p id="selectText3">select3 한 것과 비교해서 출력</p>
+        </div>
+        <p id="btnClickText"></p>
+    </div>
+<script src="main_ver2.js"></script>
+</body>
+</html>

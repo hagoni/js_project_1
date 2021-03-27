@@ -50,34 +50,34 @@ function clock() {
 
 }
 
-    // 버튼 클릭 시 지정 텍스트 출력
-    let textWrap = document.getElementById("selectTextWrap"),
-        textButton = document.getElementById("btnClickText"),
-        innerButton = document.getElementById("innerButton");
-        
-    // innerButton.addEventListener('click', function() {
-    //     if(textWrap.style.display == "block") {
-    //         textWrap.style.display = "none";
-    //         textButton.innerText = "지정 텍스트를 출력했습니다.";
-    //         innerButton.innerText = "원래대로 돌려놔라!!";
-    //     } else {
-    //             textWrap.style.display = "block";
-    //             textButton.innerText = "";
-    //             innerButton.innerText = "지정 텍스트 출력";
-    //     }
-    // })
-    innerButton.addEventListener('click', function() {
-        if(textWrap.style.display == "none") {
-            textWrap.style.display = "block";
-            textButton.innerText = "";
-            innerButton.innerText = "지정 텍스트 출력";
-        } else {
-            textWrap.style.display = "none";
-            textButton.innerText = "지정 텍스트를 출력했습니다.";
-            innerButton.innerText = "원래대로 돌려놔라!!";
-                
-        }
-    })
+// 버튼 클릭 시 지정 텍스트 출력
+let textWrap = document.getElementById("selectTextWrap"),
+    textButton = document.getElementById("btnClickText"),
+    innerButton = document.getElementById("innerButton");
+    
+// innerButton.addEventListener('click', function() {
+//     if(textWrap.style.display == "block") {
+//         textWrap.style.display = "none";
+//         textButton.innerText = "지정 텍스트를 출력했습니다.";
+//         innerButton.innerText = "원래대로 돌려놔라!!";
+//     } else {
+//             textWrap.style.display = "block";
+//             textButton.innerText = "";
+//             innerButton.innerText = "지정 텍스트 출력";
+//     }
+// })
+innerButton.addEventListener('click', function() {
+    if(textWrap.style.display == "none") {
+        textWrap.style.display = "block";
+        textButton.innerText = "";
+        innerButton.innerText = "지정 텍스트 출력";
+    } else {
+        textWrap.style.display = "none";
+        textButton.innerText = "지정 텍스트를 출력했습니다.";
+        innerButton.innerText = "원래대로 돌려놔라!!";
+            
+    }
+})
 
 
 window.onload = function() {
